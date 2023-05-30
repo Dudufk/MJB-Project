@@ -1,17 +1,17 @@
 import Link from 'next/link'
 
-interface Href {
+interface ButtonProps {
   href: string
+  content: string
 }
 
-export default function Button(props: Href) {
+export default function Button(props: ButtonProps) {
   return (
     <Link
       href={props.href}
-      target="_blank"
-      className="flex h-[50px] w-[150px] items-center justify-center rounded border border-[#aa1a21] transition-colors hover:bg-[#aa1a21]"
+      className="flex h-[50px] w-[150px] items-center justify-center rounded border bg-primary transition-colors hover:bg-red-600"
     >
-      Clique Aqui
+      {props.content}
     </Link>
   )
 }

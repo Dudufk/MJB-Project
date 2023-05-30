@@ -1,12 +1,13 @@
 import HeroBanner from '@/components/HeroBanner'
+import Services from '@/components/Services'
+import About from './about/page'
 
 export default function Home() {
   return (
     <main className="">
       <HeroBanner />
-      <section className="flex h-[100vh] items-center justify-center">
-        Hello World
-      </section>
+      <Services />
+      <About />
     </main>
   )
 }

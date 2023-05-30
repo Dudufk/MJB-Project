@@ -62,17 +62,17 @@ export default function Header() {
           >
             <ul className="items-center justify-center space-y-8 font-alt md:flex md:space-x-6 md:space-y-0">
               <li
-                className={`text-[#aa1a21] hover:underline hover:underline-offset-8`}
+                className={`text-primary hover:underline hover:underline-offset-8`}
               >
                 <Link href="/">Home</Link>
               </li>
-              <li className="text-[#aa1a21] hover:underline hover:underline-offset-8">
+              <li className="text-primary hover:underline hover:underline-offset-8">
                 <Link href="/about">Sobre</Link>
               </li>
-              <li className="text-[#aa1a21] hover:underline hover:underline-offset-8">
+              <li className="text-primary hover:underline hover:underline-offset-8">
                 <Link href="/services">Serviços</Link>
               </li>
-              <li className="text-[#aa1a21] hover:underline hover:underline-offset-8">
+              <li className="text-primary hover:underline hover:underline-offset-8">
                 <Link href="/contact">Contato</Link>
               </li>
             </ul>

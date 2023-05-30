@@ -7,15 +7,15 @@ import Image from 'next/image'
 
 import office1 from '../assets/office1.jpg'
 import office2 from '../assets/office2.jpg'
-import Button from './Button'
+import ButtonBanner from './ButtonBanner'
 
 const HeroBanner = () => {
   return (
     <Carousel
       infiniteLoop
-      nautoPlay
-      showThumbs
+      autoPlay
       interval={7000}
+      showThumbs={false}
       showStatus={false}
       className="relative h-[80vh]"
       emulateTouch
@@ -31,7 +31,7 @@ const HeroBanner = () => {
             Quero abrir minha empresa
           </p>
           <p>Inicie o seu sonho agora, nós iremos te ajudar a Começar.</p>
-          <Button href="aberturaMJB.pdf" />
+          <ButtonBanner href="aberturaMJB.pdf" content="Clique Aqui" />
         </div>
       </div>
       <div>
@@ -45,7 +45,7 @@ const HeroBanner = () => {
             Já Tenho Minha Empresa
           </p>
           <p>Migre sua empresa, iremos te ajudar com todo o processo.</p>
-          <Button href="existenteMJB.pdf" />
+          <ButtonBanner href="existenteMJB.pdf" content="Clique Aqui" />
         </div>
       </div>
     </Carousel>

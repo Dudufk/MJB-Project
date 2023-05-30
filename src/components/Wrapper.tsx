@@ -1,13 +1,18 @@
 import React from 'react'
 
-const Wrapper = ({ children, className }) => {
+interface WrapperProps {
+  children: any
+  className: string
+}
+
+const Wrapper = (props: WrapperProps) => {
   return (
     <div
       className={`mx-auto w-full max-w-[1280px] px-5 md:px-10 ${
-        className || ''
+        props.className || ''
       }`}
     >
-      {children}
+      {props.children}
     </div>
   )
 }
