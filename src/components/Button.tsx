@@ -9,7 +9,7 @@ export default function Button(props: ButtonProps) {
   return (
     <Link
       href={props.href}
-      className="flex h-[50px] w-[150px] items-center justify-center rounded border bg-primary transition-colors hover:bg-red-600"
+      className="flex h-[50px] w-[150px] items-center justify-center rounded border bg-primary text-zinc-50 transition-colors hover:bg-red-600"
     >
       {props.content}
     </Link>

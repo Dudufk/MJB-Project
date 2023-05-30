@@ -1,7 +1,7 @@
 import Button from './Button'
 import FlipCard from './FlipCard'
 
-export default function Services() {
+export default function ServicesSection() {
   return (
     <div className="flex h-auto flex-row items-center justify-around gap-10 bg-zinc-50 px-[13%] py-28 max-lg:flex-col-reverse md:px-44">
       <section className="flex flex-row gap-6 max-md:flex-col">
@@ -39,7 +39,7 @@ export default function Services() {
           <Button href="/services" content="Mais Serviços" />
         </div>
       </section>
-      <section className="pb-20">
+      <section>
         <p className="pb-10 font-alt text-5xl text-black">Serviços Para Você</p>
         <div className="max-sm:hidden">
           <Button href="/services" content="Mais Serviços" />

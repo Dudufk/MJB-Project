@@ -1,12 +1,12 @@
 import HeroBanner from '@/components/HeroBanner'
-import Services from '@/components/Services'
-import About from './about/page'
+import ServicesSection from '@/components/ServicesSection'
+import About from '@/components/AboutSection'
 
 export default function Home() {
   return (
     <main className="">
       <HeroBanner />
-      <Services />
+      <ServicesSection />
       <About />
     </main>
   )
