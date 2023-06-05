@@ -13,7 +13,7 @@ export default function AboutSection() {
   ]
 
   return (
-    <div className="flex h-auto flex-row items-center justify-around gap-10 bg-zinc-50 px-[13%] py-28 text-black max-lg:flex-col md:px-64">
+    <div className="flex h-auto flex-col items-center justify-around gap-10 bg-zinc-50 px-[13%] py-28 text-black lg:flex-row">
       <section className="flex flex-col gap-3">
         <h5 className="font-alt text-xl text-primary">Quem somos</h5>
         <h1 className="font-alt text-5xl font-bold">MJB Contabilidade</h1>
@@ -40,7 +40,7 @@ export default function AboutSection() {
               </li>
             ))}
           </ul>
-          <div className="sm:text-center">
+          <div className="flex max-lg:justify-center">
             <Button content="Saiba mais" href="/about" />
           </div>
         </div>

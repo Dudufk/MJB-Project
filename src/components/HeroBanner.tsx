@@ -24,7 +24,7 @@ const HeroBanner = () => {
         <Image
           src={office1}
           alt="imageCarousel1"
-          className="h-[80vh] object-cover object-top blur-sm brightness-50 "
+          className="h-[80vh] object-cover object-top blur-sm brightness-50"
         />
         <div className="absolute bottom-[35%] flex flex-col items-center gap-6 md:px-[25%]">
           <p className="font-alt text-[5vh] font-extrabold text-zinc-100 md:text-7xl">
@@ -42,7 +42,7 @@ const HeroBanner = () => {
         />
         <div className="absolute bottom-[35%] flex flex-col items-center gap-6 md:px-[30%]">
           <p className="font-alt text-[5vh] font-extrabold text-zinc-100 md:text-7xl">
-            Já Tenho Minha Empresa
+            Já tenho minha empresa
           </p>
           <p>Migre sua empresa, iremos te ajudar com todo o processo.</p>
           <ButtonBanner href="existenteMJB.pdf" content="Clique Aqui" />
