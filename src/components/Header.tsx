@@ -4,12 +4,13 @@ import { useState } from 'react'
 import logo from '../assets/logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
 
 export default function Header() {
   const [navbar, setNavbar] = useState(false)
 
   return (
-    <header className={`w-full bg-zinc-200 shadow`}>
+    <header className={`w-full bg-zinc-100 shadow`}>
       <div className="mx-auto px-4 md:flex md:items-center md:gap-[32%] md:px-8 lg:max-w-7xl">
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
@@ -77,6 +78,30 @@ export default function Header() {
               </li>
             </ul>
           </div>
+        </div>
+        <div
+          className={`mt-3 pb-3 text-3xl text-primary md:mt-0 md:block md:pb-0 ${
+            navbar ? 'block' : 'hidden'
+          }`}
+        >
+          <ul className="flex gap-6">
+            <li>
+              <Link
+                href="https://www.instagram.com/contabilidademjb"
+                target="_blank"
+              >
+                <FaInstagram />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://api.whatsapp.com/send?phone=5547997412345"
+                target="_blank"
+              >
+                <FaWhatsapp />
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

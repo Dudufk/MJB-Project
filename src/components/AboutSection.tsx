@@ -2,9 +2,17 @@ import Image from 'next/image'
 import { FaCheck } from 'react-icons/fa'
 
 import team from '../assets/equipe.png'
+import team2 from '../assets/equipe2.jpeg'
 import Button from './Button'
 
-export default function AboutSection() {
+type Images = 'team' | 'team2'
+
+interface SectionProps {
+  image: Images
+  isButton?: boolean
+}
+
+export default function AboutSection(props: SectionProps) {
   const texts = [
     'Fornecer aos nossos clientes soluções completas em Contabilidade, Gestão tributária, fiscal e financeira das Empresa com ética profissional e pessoal, com contínuo aperfeiçoamento.',
     'Atender nossos clientes e parceiros nos prazos estabelecidos com comprometimento e dedicação.',
@@ -13,7 +21,7 @@ export default function AboutSection() {
   ]
 
   return (
-    <div className="flex h-auto flex-col items-center justify-around gap-10 bg-zinc-50 px-[13%] py-28 text-black lg:flex-row">
+    <div className="flex h-auto flex-col items-center justify-around gap-10 bg-zinc-100 px-[13%] py-28 text-black lg:flex-row">
       <section className="flex flex-col gap-3">
         <h5 className="font-alt text-xl text-primary">Quem somos</h5>
         <h1 className="font-alt text-5xl font-bold">MJB Contabilidade</h1>
@@ -40,7 +48,11 @@ export default function AboutSection() {
               </li>
             ))}
           </ul>
-          <div className="flex max-lg:justify-center">
+          <div
+            className={`flex max-lg:justify-center ${
+              props.isButton ? '' : 'hidden'
+            }`}
+          >
             <Button content="Saiba mais" href="/about" />
           </div>
         </div>
@@ -51,7 +63,14 @@ export default function AboutSection() {
           alt="equipe"
           width={3000}
           height={3000}
-          className="rounded-3xl"
+          className={`rounded-3xl ${props.image === 'team' ? '' : 'hidden'}`}
+        />
+        <Image
+          src={team2}
+          alt="equipe"
+          width={3000}
+          height={3000}
+          className={`rounded-3xl ${props.image === 'team2' ? '' : 'hidden'}`}
         />
       </section>
     </div>

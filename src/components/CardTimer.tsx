@@ -31,7 +31,7 @@ export default function CardTimer(props: CardProps) {
   }, [controls, count, inView, props.num])
 
   return (
-    <div className="flex h-44 w-72 flex-col items-center justify-center gap-7 rounded-xl border-b-4 border-b-primary bg-white shadow-xl">
+    <div className="flex h-44 w-72 flex-col items-center justify-center gap-7 rounded-xl border-b-4 border-b-primary bg-zinc-100 shadow-xl">
       <div className="flex text-6xl text-primary">
         <motion.h1 ref={ref}>{rounded}</motion.h1>
         {props.plus ? '+' : ''}

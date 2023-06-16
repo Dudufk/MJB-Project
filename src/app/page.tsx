@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       <HeroBanner />
       <ServicesSection />
-      <AboutSection />
+      <AboutSection image="team" isButton />
       <StatsSection />
     </main>
   )

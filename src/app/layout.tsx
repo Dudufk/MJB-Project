@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 import { Roboto_Flex as Roboto, Poppins } from 'next/font/google'
 import Footer from '@/components/Footer'
@@ -19,13 +20,14 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${roboto.variable} ${poppins.variable} bg-gray-900 font-sans text-gray-100`}
       >
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

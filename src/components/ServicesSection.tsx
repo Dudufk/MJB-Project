@@ -3,7 +3,7 @@ import FlipCard from './FlipCard'
 
 export default function ServicesSection() {
   return (
-    <div className="flex h-auto flex-row items-center justify-around gap-10 bg-zinc-50 px-[13%] py-28 max-lg:flex-col-reverse md:px-44">
+    <div className="flex h-auto flex-row items-center justify-around gap-10 bg-zinc-100 px-[13%] py-28 max-lg:flex-col-reverse md:px-44">
       <section className="flex flex-row gap-6 max-md:flex-col">
         <div className="flex flex-col gap-6">
           <FlipCard
