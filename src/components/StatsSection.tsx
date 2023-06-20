@@ -7,7 +7,7 @@ export default function StatsSection() {
         style={{
           backgroundImage: `url(/office3.jpg)`,
         }}
-        className="flex h-auto flex-col items-center justify-around gap-10 bg-cover bg-fixed bg-no-repeat px-[13%] py-28 md:px-44 min-[1445px]:flex-row"
+        className="flex h-auto flex-col items-center justify-around gap-10 bg-cover bg-fixed bg-top bg-no-repeat px-[13%] py-28 md:px-44 min-[1445px]:flex-row"
       >
         <section className="flex flex-col justify-center">
           <h1 className="font-alt text-5xl drop-shadow-xl">

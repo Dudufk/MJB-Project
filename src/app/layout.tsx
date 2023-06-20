@@ -4,6 +4,7 @@ import './globals.css'
 import { Roboto_Flex as Roboto, Poppins } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import logoImg from '../assets/logo-com-fundo.png'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 
@@ -16,6 +17,7 @@ const poppins = Poppins({
 export const metadata = {
   title: 'MJB Contabilidade',
   description: 'MJB Contabilidade - Escritório de Contabilidade',
+  image: logoImg,
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
