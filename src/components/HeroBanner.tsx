@@ -23,6 +23,7 @@ const HeroBanner = () => {
       <div className="">
         <Image
           src={office1}
+          priority
           alt="imageCarousel1"
           className="h-[80vh] object-cover object-top blur-sm brightness-50"
         />
