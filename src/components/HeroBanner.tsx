@@ -17,7 +17,7 @@ const HeroBanner = () => {
       interval={7000}
       showThumbs={false}
       showStatus={false}
-      className="relative h-[80vh]"
+      className="relative h-[50vh] md:h-[80vh]"
       emulateTouch
     >
       <div className="">
@@ -25,9 +25,9 @@ const HeroBanner = () => {
           src={office1}
           priority
           alt="imageCarousel1"
-          className="h-[80vh] object-cover object-top blur-sm brightness-50"
+          className="h-[50vh] object-cover object-top blur-sm brightness-50 md:h-[80vh]"
         />
-        <div className="absolute bottom-[35%] flex flex-col items-center gap-6 md:px-[25%]">
+        <div className="absolute bottom-[25%] flex flex-col items-center gap-6 md:bottom-[35%] md:px-[25%]">
           <p className="font-alt text-[5vh] font-extrabold text-zinc-100 md:text-7xl">
             Quero abrir minha empresa
           </p>
@@ -39,9 +39,9 @@ const HeroBanner = () => {
         <Image
           src={office2}
           alt="imageCarousel2"
-          className="h-[80vh] object-cover blur-sm brightness-50"
+          className="h-[50vh] object-cover blur-sm brightness-50 md:h-[80vh]"
         />
-        <div className="absolute bottom-[35%] flex flex-col items-center gap-6 md:px-[30%]">
+        <div className="absolute bottom-[25%] flex flex-col items-center gap-6 md:bottom-[35%] md:px-[30%]">
           <p className="font-alt text-[5vh] font-extrabold text-zinc-100 md:text-7xl">
             Já tenho minha empresa
           </p>
